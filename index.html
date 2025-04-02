@@ -3,101 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Win $50,000 Sweepstakes</title>
+    <title>Exclusive Offer - Get Started Now</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #2e7d32, #66bb6a);
-            color: white;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
             text-align: center;
         }
         .container {
-            padding: 2rem;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        h1 {
-            font-size: 3rem;
-            margin: 1rem 0;
+        header h1 {
+            font-size: 2.5em;
         }
-        p {
-            font-size: 1.2rem;
+        .offer-section {
+            padding: 20px;
+            position: relative;
         }
-        .email-input {
-            margin: 1rem 0;
+        .offer-image-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
         }
-        input[type="email"] {
-            width: 60%;
-            padding: 1rem;
-            font-size: 1rem;
-            border: 2px solid #fff;
+        .offer-image {
+            width: 100%;
+            display: block;
+            filter: blur(3px); /* Slight blur effect */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            opacity: 0.6;
+        }
+        .cta-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            background: #ff0000;
+            color: #fff;
+            padding: 20px 40px;
+            font-size: 1.5em;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+            animation: heartbeat 1.5s infinite, shake 0.5s infinite alternate, alarmGlow 1s infinite alternate;
+        }
+        .cta-button:hover {
+            background: #cc0000;
+        }
+        @keyframes heartbeat {
+            0% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.1); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+        @keyframes shake {
+            0% { transform: translate(-50%, -50%) rotate(-3deg); }
+            100% { transform: translate(-50%, -50%) rotate(3deg); }
+        }
+        @keyframes alarmGlow {
+            0% { box-shadow: 0 0 10px #ff0000; }
+            100% { box-shadow: 0 0 30px #ff0000; }
+        }
+        .testimonial-section, .faq-section {
+            margin-top: 30px;
+        }
+        .testimonial {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
             border-radius: 5px;
+            margin: 10px 0;
         }
-        input[type="checkbox"] {
-            margin-right: 0.5rem;
-        }
-        .button {
-            background: linear-gradient(135deg, #4caf50, #81c784);
-            color: white;
-            border: 2px solid green;
-            padding: 1rem 2rem;
-            font-size: 1.3rem;
-            border-radius: 10px;
+        details {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
             cursor: pointer;
-            transition: background 0.3s;
         }
-        .button:hover {
-            background: #43a047;
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
         }
-        .how-it-works {
-            margin-top: 2rem;
-        }
-        .how-it-works h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .how-it-works .steps {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            text-align: center;
-        }
-        .step {
-            background: white;
-            color: black;
-            border-radius: 10px;
-            padding: 1rem;
-            width: 150px;
+        @media (max-width: 600px) {
+            .container {
+                width: 90%;
+                margin: 20px auto;
+                padding: 15px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .cta-button {
+                padding: 15px 30px;
+                font-size: 1.2em;
+            }
         }
     </style>
 </head>
 <body>
-    <a href="https://adsnextgen.g2afse.com/click?pid=2030&offer_id=1843">
     <div class="container">
-        <h1>Don't Miss Your Chance to</h1>
-        <h1 style="font-size: 4rem;">WIN $50,000</h1>
-        <p>Start Now to Enter The $50,000 Weekly Sweepstakes!</p>
-
-        <a href="https://adsnextgen.g2afse.com/click?pid=2030&offer_id=1843">
-        <button class="button">Click here to get he offer</button></a>
-        <div class="how-it-works">
-            <h2>HOW IT WORKS</h2>
-            <div class="steps">
-                <div class="step">
-                    <h3>1</h3>
-                    <p>Enter your email</p>
+        <header>
+            <h1>Exclusive Live Offer!</h1>
+            <p>Don't miss this limited-time opportunity. Sign up now and claim your reward!</p>
+        </header>
+        <main>
+            <div class="offer-section">
+                <div class="offer-image-container">
+                    <img src="offer-image.jpg" alt="Special Offer" class="offer-image">
+                    <div class="overlay"></div>
+                    <a href="https://smrturl.co/a/sdcc1aecee2/8871?s1=" class="cta-button">Hurry Up!! Claim Your Offer Now !!</a>
                 </div>
-                <div class="step">
-                    <h3>2</h3>
-                    <p>Confirm your entry</p>
+                <h2>Why Choose This Offer?</h2>
+                <ul>
+                    <li>✔ Exclusive rewards for new users</li>
+                    <li>✔ Quick and easy signup process</li>
+                    <li>✔ 100% secure and verified</li>
+                    <li>✔ Limited-time deal – act fast!</li>
+                </ul>
+            </div>
+            <div class="testimonial-section">
+                <h2>What Our Users Say</h2>
+                <div class="testimonial">
+                    <p>"This offer changed my life! Quick signup and amazing benefits."</p>
+                    <span>- Alex J.</span>
                 </div>
-                <div class="step">
-                    <h3>3</h3>
-                    <p>Win big!</p>
+                <div class="testimonial">
+                    <p>"I couldn't believe how easy and rewarding this was! Highly recommended."</p>
+                    <span>- Sarah W.</span>
                 </div>
             </div>
-        </div>
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <details>
+                    <summary>How do I claim my reward?</summary>
+                    <p>Simply click the button above and follow the easy signup process.</p>
+                </details>
+                <details>
+                    <summary>Is this offer legitimate?</summary>
+                    <p>Absolutely! We partner with verified providers to bring you the best deals.</p>
+                </details>
+                <details>
+                    <summary>How long is this offer available?</summary>
+                    <p>It's a limited-time deal, so hurry up and claim it while it lasts!</p>
+                </details>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025 Exclusive Offers. All Rights Reserved.</p>
+        </footer>
     </div>
-        </a>
 </body>
 <!-- Meta Pixel Code -->
 <script>
